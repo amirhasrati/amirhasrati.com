@@ -576,6 +576,10 @@ video {
   width: 1.5rem;
 }
 
+.grow {
+  flex-grow: 1;
+}
+
 .justify-center {
   justify-content: center;
 }
@@ -606,8 +610,9 @@ video {
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
 }
 
-.p-4 {
-  padding: 1rem;
+.px-16 {
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
 
 .px-3 {
@@ -655,11 +660,6 @@ video {
 
 .font-light {
   font-weight: 300;
-}
-
-.text-blue-800 {
-  --tw-text-opacity: 1;
-  color: rgb(30 64 175 / var(--tw-text-opacity));
 }
 
 .duration-100 {
