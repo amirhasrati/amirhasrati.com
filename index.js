@@ -20,11 +20,25 @@ app.get('/home', (req, res) => {
     res.render('home');
 })
 
+// Projects
+app.get('/projects', (req, res) => {
+    res.render('projects');
+})
+
 // Roadmap
 app.get('/roadmap', (req, res) => {
     res.render('roadmap');
 })
 
+// About
+app.get('/about', (req, res) => {
+    res.render('about');
+})
+
+// Contact
+app.get('/contact', (req, res) => {
+    res.render('contact');
+})
 
 // Port
 app.listen(3000, () => {
