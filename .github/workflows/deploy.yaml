@@ -1,0 +1,16 @@
+name: Deploy
+on:
+  push:
+    branches:
+      - main
+jobs:
+  deploy:
+    name: deploy
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: superfly/flyctl-actions/setup-flyctl@master
+      - run: flyctl deploy
+        env:
+          FLY_TOKEN: ${{ secrets.FLY_TOKEN }}
