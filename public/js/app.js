@@ -38,15 +38,15 @@ if (window.location.href.includes("home")) {
   currentBtn.className =
     "bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium";
 } else if (window.location.href.includes("roadmap")) {
-  const currentBtn = navbarRoadmap.querySelector("#buttons").children[2];
+  const currentBtn = navbarRoadmap.querySelector("#buttons").children[1];
   currentBtn.className =
     "bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium";
 } else if (window.location.href.includes("about")) {
-  const currentBtn = navbarAbout.querySelector("#buttons").children[4];
+  const currentBtn = navbarAbout.querySelector("#buttons").children[3];
   currentBtn.className =
     "bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium";
 } else if (window.location.href.includes("contact")) {
-  const currentBtn = navbarContact.querySelector("#buttons").children[5];
+  const currentBtn = navbarContact.querySelector("#buttons").children[4];
   currentBtn.className =
     "bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium";
 }
