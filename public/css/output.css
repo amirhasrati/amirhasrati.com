@@ -1288,6 +1288,10 @@ video {
     justify-content: flex-end;
   }
 
+  .sm\:justify-center {
+    justify-content: center;
+  }
+
   .sm\:px-6 {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
@@ -1315,6 +1319,10 @@ video {
 
   .lg\:block {
     display: block;
+  }
+
+  .lg\:justify-start {
+    justify-content: flex-start;
   }
 
   .lg\:justify-center {
