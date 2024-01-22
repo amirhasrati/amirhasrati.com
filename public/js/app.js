@@ -10,8 +10,25 @@ const navbarProjects = document.querySelector('#projects #navbar')
 const navbarAbout = document.querySelector('#about #navbar');
 const navbarContact = document.querySelector('#contact #navbar')
 
+const menuBtn = document.querySelector('#mobile-menu');
+const dropdownOptions = document.querySelector('#dropdown-options');
+const menuOpen = document.querySelector('#btn-open');
+const menuClose = document.querySelector('#btn-close');
+
+menuBtn.addEventListener('click', () => {
+    if(dropdownOptions.classList.contains('hidden')) {
+        dropdownOptions.classList.remove('hidden');
+        menuOpen.classList.add('hidden');
+        menuClose.classList.remove('hidden');
+    } else {
+        dropdownOptions.classList.add('hidden');
+        menuOpen.classList.remove('hidden');
+        menuClose.classList.add('hidden');
+    }
+})
 
 // Current page:
+
 
 
 if(window.location.href.includes('home')) {
