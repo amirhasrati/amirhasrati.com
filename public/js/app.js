@@ -16,39 +16,39 @@ const menuOpen = document.querySelector("#btn-open");
 const menuClose = document.querySelector("#btn-close");
 
 menuBtn.addEventListener("click", () => {
-  if (dropdownOptions.classList.contains("hidden")) {
-    dropdownOptions.classList.remove("hidden");
-    menuOpen.classList.add("hidden");
-    menuClose.classList.remove("hidden");
-  } else {
-    dropdownOptions.classList.add("hidden");
-    menuOpen.classList.remove("hidden");
-    menuClose.classList.add("hidden");
-  }
+    if (dropdownOptions.classList.contains("hidden")) {
+        dropdownOptions.classList.remove("hidden");
+        menuOpen.classList.add("hidden");
+        menuClose.classList.remove("hidden");
+    } else {
+        dropdownOptions.classList.add("hidden");
+        menuOpen.classList.remove("hidden");
+        menuClose.classList.add("hidden");
+    }
 });
 
 // Current page:
 
 if (window.location.href.includes("home")) {
-  const currentBtn = navbarHome.querySelector("#buttons").children[0];
-  currentBtn.className =
-    "bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium";
+    const currentBtn = navbarHome.querySelector("#buttons").children[0];
+    currentBtn.className =
+        "bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium";
 } else if (window.location.href.includes("projects")) {
-  const currentBtn = navbarProjects.querySelector("#buttons").children[1];
-  currentBtn.className =
-    "bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium";
+    const currentBtn = navbarProjects.querySelector("#buttons").children[1];
+    currentBtn.className =
+        "bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium";
 } else if (window.location.href.includes("roadmap")) {
-  const currentBtn = navbarRoadmap.querySelector("#buttons").children[1];
-  currentBtn.className =
-    "bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium";
+    const currentBtn = navbarRoadmap.querySelector("#buttons").children[1];
+    currentBtn.className =
+        "bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium";
 } else if (window.location.href.includes("about")) {
-  const currentBtn = navbarAbout.querySelector("#buttons").children[3];
-  currentBtn.className =
-    "bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium";
+    const currentBtn = navbarAbout.querySelector("#buttons").children[3];
+    currentBtn.className =
+        "bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium";
 } else if (window.location.href.includes("contact")) {
-  const currentBtn = navbarContact.querySelector("#buttons").children[3];
-  currentBtn.className =
-    "bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium";
+    const currentBtn = navbarContact.querySelector("#buttons").children[3];
+    currentBtn.className =
+        "bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium";
 }
 
 // mobile menu
