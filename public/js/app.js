@@ -42,7 +42,7 @@ if (window.location.href.includes("home")) {
     currentBtn.className =
         "bg-slate-700 text-white rounded-full px-3 py-2 text-sm font-medium";
 } else if (window.location.href.includes("about")) {
-    const currentBtn = navbarAbout.querySelector("#buttons").children[3];
+    const currentBtn = navbarAbout.querySelector("#buttons").children[2];
     currentBtn.className =
         "bg-slate-700 text-white rounded-full px-3 py-2 text-sm font-medium";
 } else if (window.location.href.includes("contact")) {
